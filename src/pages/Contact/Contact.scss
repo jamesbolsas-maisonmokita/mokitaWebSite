@@ -1,0 +1,65 @@
+.contact-page {
+    h1 {
+      margin-bottom: 1rem;
+    }
+    
+    > p {
+      margin-bottom: 2rem;
+    }
+    
+    .success-message {
+      background-color: #d4edda;
+      color: #155724;
+      padding: 1rem;
+      border-radius: 4px;
+      margin-bottom: 1.5rem;
+    }
+    
+    .contact-form {
+      max-width: 600px;
+      
+      .form-group {
+        margin-bottom: 1.5rem;
+        
+        label {
+          display: block;
+          margin-bottom: 0.5rem;
+          font-weight: 500;
+        }
+        
+        input, textarea {
+          width: 100%;
+          padding: 0.75rem;
+          border: 1px solid #ddd;
+          border-radius: 4px;
+          font-family: inherit;
+          font-size: 1rem;
+          
+          &:focus {
+            outline: none;
+            border-color: #0066cc;
+          }
+        }
+      }
+      
+      .submit-button {
+        background-color: #0066cc;
+        color: white;
+        border: none;
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        
+        &:hover:not(:disabled) {
+          background-color: #0055aa;
+        }
+        
+        &:disabled {
+          background-color: #cccccc;
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
